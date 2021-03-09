@@ -14,12 +14,12 @@
 <tbody>
     <% @brooms.each do |broom| %>
       <tr>
-        <td><%= brooms.name %></td>
-        <td><%= brooms.description %></td>
-        <td><%= brooms.price %></td>
-        <td><%= brooms.twigs %></td>
-        <td><%= brooms.power %></td>
-        <td><%= brooms.age %></td>
+        <td><%= broom.name %></td>
+        <td><%= broom.description %></td>
+        <td><%= broom.price %></td>
+        <td><%= broom.twigs %></td>
+        <td><%= broom.power %></td>
+        <td><%= broom.age %></td>
         <td><%= link_to 'Show', broom_path(broom) %></td>
         <td><%= link_to 'New', new_broom_path(broom) %></td>
       </tr>
