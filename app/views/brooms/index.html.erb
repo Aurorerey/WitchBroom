@@ -1,0 +1,29 @@
+<div class="container">
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Twigs</th>
+      <th>Power</th>
+      <th>Type</th>
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+<tbody>
+    <% @brooms.each do |broom| %>
+      <tr>
+        <td><%= brooms.name %></td>
+        <td><%= brooms.description %></td>
+        <td><%= brooms.price %></td>
+        <td><%= brooms.twigs %></td>
+        <td><%= brooms.power %></td>
+        <td><%= brooms.type %></td>
+        <td><%= link_to 'Show', broom_path(broom) %></td>
+        <td><%= link_to 'New', new_broom_path(broom) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
