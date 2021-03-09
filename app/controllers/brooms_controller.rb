@@ -1,0 +1,2 @@
+class BroomsController < ApplicationController
+end
