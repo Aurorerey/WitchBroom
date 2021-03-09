@@ -1,1 +1,65 @@
 // Specific CSS for your home-page
+body{
+    background: rgb(245,245,245);
+    color: grey;
+    font-family: 'Tajawal', sans-serif;
+  }
+  h1{
+    font-family: 'Josefin Sans', cursive;
+    color: #000000;
+    font-weight: bold;
+  }
+  h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(250, 167, 181);
+    font-weight: bold;
+    font-size: 35px;
+  }
+  a {
+    color: yellow;
+  }
+  a:hover {
+    text-decoration: none;
+    color: purple;
+  }
+  
+  #banner{
+    text-align: center;
+    background-size: cover;
+    background-image: url("Ciel-etoile.jpg");
+    padding: 120px;
+    color: white;
+    text-shadow: 1px 1px 5px grey;
+    filter: brightness(90%);
+  }
+  .navbar-brand h1 {
+    color: #fa8787;
+    font-size: 20px;
+    margin-right: 800px;
+  }
+
+.navbar-brand {
+    background: transparent;
+}
+
+  #banner p {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 3%;
+  }
+
+  #footer{
+    padding: 10px;
+    background: rgb(30, 30, 30);
+    color: lightgrey;
+    text-align: center;
+  }
+
+  #footer a {
+    color: lightgrey;
+    font-size: 15px;
+  }
+  #footer a:hover {
+    color: white;
+  }
