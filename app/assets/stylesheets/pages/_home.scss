@@ -12,74 +12,77 @@ body{
     padding: 0;
     position: relative;
     background-image: url("night.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .nav-link {
+    color: #ffe3fe;
+    font-size: 20px;
+  }
+
+
+.container {
+    text-align: center;
+    background-size: cover;
     color: white;
-    font-size: 30px;
-  }
-
-.form-inputs {
-  margin-left: 30%;
-  margin-right: 30%;
+    filter: brightness(90%);
 }
 
-.form-actions {
-  margin-left: 30%;
+.container .home_btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: block;
+  height: 180px;
+  width: 180px;
+  border-radius: 100px;
+  padding-top: 80px;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  font-family: 'BioRhyme', serif;
+  margin-top: 50px;
 }
 
-h2 {
-  margin-left: 30%;
+ .container .home_btn:hover {
+
+  text-decoration: none;
+ }
+
+
+.container h2 {
+  font-size: 100px;
+
 }
 
-  h1 {
-    font-family: 'BioRhyme', serif;
-    color: #000000;
-    font-weight: bold;
-  }
+.barnav h1 {
+  color: #ffe3fe;
+  font-family: 'BioRhyme', serif;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
 
   .login {
    display: flex;
    padding-left: 95%;
-   color: white; 
+   color: white;
   }
 
-  #banner {
-    text-align: center;
-    background-size: cover;
-    color: white;
-    min-height: 600px;
-    filter: brightness(90%);
-  }
-
-  #banner h1 {
-    text-align: left;
-  }
-
-  #banner a:hover {
-    color: white;
-  }
 
   .login {
     color: rgb(255, 255, 255);
     padding-top: 10px;
-    
-  }
 
-  #banner p {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 20%;
   }
 
   #footer{
     background: rgb(30, 30, 30);
     color: lightgrey;
     text-align: center;
-    position: absolute; 
+    position: absolute;
     bottom: 0;
-    left: 0; 
+    left: 0;
     right: 0;
   }
 
