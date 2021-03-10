@@ -4,9 +4,23 @@
 @import "navbar";
 
 .block {
-   width: 350px;
+  display: flex;
+   width: 50%;
    border: 1px solid black;
    text-align: justify;
    padding: 12px;
-   margin: 50px; /* Marge extérieure de 50px */
+   margin: 25px; /* Marge extérieure de 50px */
+}
+
+.block_info {
+  padding: 10px;
+}
+
+.block_image {
+  padding: 10px;
+  background-color: white;
+  img {
+  height: 200px;
+  width: 250px;
+  }
 }
