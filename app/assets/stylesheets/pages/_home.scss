@@ -5,7 +5,7 @@ html {
 
 body{
     background: rgb(245,245,245);
-    color: grey;
+    color: white;
     font-family: 'Cabin', sans-serif;
     min-height: 100%;
     margin: 0;
@@ -13,6 +13,24 @@ body{
     position: relative;
     background-image: url("night.jpg");
   }
+
+  .nav-link {
+    color: white;
+    font-size: 30px;
+  }
+
+.form-inputs {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.form-actions {
+  margin-left: 30%;
+}
+
+h2 {
+  margin-left: 30%;
+}
 
   h1 {
     font-family: 'BioRhyme', serif;
