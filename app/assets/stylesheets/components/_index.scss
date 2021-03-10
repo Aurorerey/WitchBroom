@@ -2,3 +2,11 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+
+.block {
+   width: 350px;
+   border: 1px solid black;
+   text-align: justify;
+   padding: 12px;
+   margin: 50px; /* Marge extérieure de 50px */
+}

@@ -1,29 +1,20 @@
+<head>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body style="background: rgba(1, 52, 65, 0.89);">
 <div class="container">
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Price</th>
-      <th>Twigs</th>
-      <th>Power</th>
-      <th>Age</th>
-      <th colspan="6"></th>
-    </tr>
-  </thead>
-<tbody>
+    <div class="block">
+      <h1 style="color:white;">IMAGE</h1>
+    </div>
     <% @brooms.each do |broom| %>
-      <tr>
-        <td><%= broom.name %></td>
-        <td><%= broom.description %></td>
-        <td><%= broom.price %></td>
-        <td><%= broom.twigs %></td>
-        <td><%= broom.power %></td>
-        <td><%= broom.age %></td>
+      <div class="block" style="color:white;">
+        <h1 style="color:white;"><%= broom.name %></h1>
+        <h5><i><%= broom.description %></h5></i>
+        <p><%= broom.price %>$</p>
         <td><%= link_to 'Show', broom_path(broom) %></td>
-        <td><%= link_to 'New', new_broom_path(broom) %></td>
-      </tr>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
 </div>
+<div id="map" style="height: 300px; width: 600px"></div>
+</body>
