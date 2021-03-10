@@ -6,15 +6,16 @@ html {
 body{
     background: rgb(245,245,245);
     color: grey;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Cabin', sans-serif;
     min-height: 100%;
     margin: 0;
     padding: 0;
     position: relative;
+    background-image: url("night.jpg");
   }
 
   h1 {
-    font-family: 'Josefin Sans', cursive;
+    font-family: 'BioRhyme', serif;
     color: #000000;
     font-weight: bold;
   }
@@ -28,11 +29,23 @@ body{
   #banner {
     text-align: center;
     background-size: cover;
-    background-image: url("Ciel-etoile.jpg");
     color: white;
     min-height: 600px;
-    text-shadow: 1px 1px 5px grey;
     filter: brightness(90%);
+  }
+
+  #banner h1 {
+    text-align: left;
+  }
+
+  #banner a:hover {
+    color: white;
+  }
+
+  .login {
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    
   }
 
   #banner p {
