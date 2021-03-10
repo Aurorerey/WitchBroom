@@ -11,10 +11,14 @@
       <div class="block_info" style="color:grey;">
         <h1 style="color:black;"><%= broom.name %></h1>
         <p><i><%= broom.description %></p></i>
-        <div>
-          <p><button type="button" class="btn btn-light"><%= broom.price %>$ /day</button></p>
-          <td><button type="button" class="btn btn-light"><%= link_to 'Show', broom_path(broom) %></td></button>
+        <div class="sep_block">
+          <p style="color:rgb(50, 50, 50);"><%= image_tag "https://kitt.lewagon.com/placeholder/users/sarahlafer", class: "avatar-bordered", alt: "avatar-bordered" %>       <strong>Witch <%= broom.user.nickname %></p></strong>
+          <p style="color:black;"><button type="button" class="btn btn-light btn_price" disabled><%= broom.price %>$ /day</button></p>
         </div>
+        <div class="button_show">
+        <td><button type="button" class="btn btn-light btn_price"><%= link_to 'Info', broom_path(broom) %></td></button>
+        </div>
+        <br>
     </div>
   </div>
     <% end %>
