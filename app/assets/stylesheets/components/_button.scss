@@ -1,0 +1,25 @@
+.btn_price {
+  border-radius: 10px;
+  background-color: rgba(200, 200, 200, 0.5);
+  text-color: black;
+  opacity: 100%;
+}
+
+.button_show {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 10px;
+  a
+  {
+    text-decoration:none;
+    color: black;
+  }
+  .btn {
+    border-radius: 50px;
+  }
+}
+
+.btn.disabled, .btn:disabled {
+  opacity: 1;
+}
