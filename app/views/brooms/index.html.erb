@@ -1,18 +1,20 @@
 <head>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
 </head>
-<body style="background: rgba(1, 52, 65, 0.89);">
+<body>
 <div class="container">
     <% @brooms.each do |broom| %>
     <div class="block">
       <div class="block_image">
       <%= image_tag "Brooms images/balaisasia.png", alt: "alttext" %>
       </div>
-      <div class="block_info" style="color:white;">
-        <h1 style="color:white;"><%= broom.name %></h1>
-        <h5><i><%= broom.description %></h5></i>
-        <p><%= broom.price %>$</p>
-        <td><%= link_to 'Show', broom_path(broom) %></td>
+      <div class="block_info" style="color:grey;">
+        <h1 style="color:black;"><%= broom.name %></h1>
+        <p><i><%= broom.description %></p></i>
+        <div>
+          <p><button type="button" class="btn btn-light"><%= broom.price %>$ /day</button></p>
+          <td><button type="button" class="btn btn-light"><%= link_to 'Show', broom_path(broom) %></td></button>
+        </div>
     </div>
   </div>
     <% end %>
