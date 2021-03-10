@@ -2,3 +2,34 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+
+.block {
+  display: flex;
+   width: 60%;
+   border: 1px solid black;
+   background: white;;
+   opacity: 85%;
+   border-radius: 5px;
+   text-align: justify;
+   padding: 12px;
+   margin: 25px; /* Marge extérieure de 50px */
+}
+
+.block_info {
+  padding-left: 50px;
+}
+
+.block_image {
+  padding: 10px;
+  img {
+  height: 200px;
+  width: 250px;
+  }
+}
+
+.sep_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
