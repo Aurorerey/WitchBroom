@@ -7,10 +7,10 @@
 .block {
   display: flex;
    width: 60%;
-   border: 1px solid black;
-   background: white;;
+   border: 2px solid black;
+   background: white;
    opacity: 85%;
-   border-radius: 5px;
+   border-radius: 10px;
    text-align: justify;
    padding: 12px;
    margin: 25px; /* Marge extérieure de 50px */
@@ -34,3 +34,4 @@
   justify-content: space-between;
   align-items: baseline;
 }
+

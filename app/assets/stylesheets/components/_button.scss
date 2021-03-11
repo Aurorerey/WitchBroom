@@ -8,8 +8,7 @@
 .button_show {
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  padding-right: 10px;
+  justify-content: center;
   a
   {
     text-decoration:none;
@@ -22,4 +21,9 @@
 
 .btn.disabled, .btn:disabled {
   opacity: 1;
+}
+
+.btn-light.disabled, .btn-light:disabled {
+  background-color: #CFC0FF;
+  border-color: #ffe3fe;
 }
