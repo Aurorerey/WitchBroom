@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "open-uri"
 
 Broom.destroy_all
 User.destroy_all
@@ -21,9 +22,10 @@ User.create(nickname:"Ludovine", email: "ludovine@witch.com", password:"ludovine
 
 users = User.all
 
-Broom.create!(name: "L'intrépide", description: "Il ne craint pas l'aventure, résiste à tout type d'intempéries
-  , il ne vous decevra jamais.", price: 402,
-  power: 75, twigs: 657, age:"106", image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1615471915/WitchBroom/balaisfin_euiwsh.png), user: users.sample)
+file = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615471915/WitchBroom/balaisfin_euiwsh.png')
+lintrepide = Broom.create!(name: "L'intrépide", description: "Il ne craint pas l'aventure, résiste à tout type d'intempéries
+  , il ne vous decevra jamais.", price: 402, power: 75, twigs: 657, age:"106", user: users.sample)
+lintrepide.photo.attach(io: file, filename: 'balaisfin', content_type: 'image/jpg')
 
 Broom.create(name: "L'ancien", description: "Très très fiable, je ne le loue qu'à des sorcières de confiance,
   il est solide mais il faudra quand même en prendre grand soin.", price: 260,
@@ -54,6 +56,10 @@ Broom.create(name: "Le classique", description: "Un beau balais comme on en fait
 Broom.create(name: "Le plumeau", description: "Un balais dessiné par une grande créatrice, pour les sorcières fan de mode (très peu utilisé, en parfait état).", price: 300,
   power: 45, twigs: 657, age:"34", user: users.sample)
 
+
+file = URI.open('https://res.cloudinary.com/df0stqosw/image/upload/v1615384359/Bonvan/caleb-george-iVXfOilGYHA-unsplash_1_kyyvkr.jpg')
+La_Belle_de_nuit = Van.new(user: user, brand: "La belle de Nuit", model: "Renault Trafic", passengers: 5, description:"voila mon van", location: "Marseille", price_per_night: 156)
+La_Belle_de_nuit.photos.attach(io: file, filename: 'nes', content_type: 'image/jpg')
 
 
 
