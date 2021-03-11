@@ -11,15 +11,10 @@ body{
     margin: 0;
     padding: 0;
     position: relative;
-    background-image: url("night.jpg");
+    background-image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1615471985/WitchBroom/night_osmkmw.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-  }
-
-  .nav-link {
-    color: #ffe3fe;
-    font-size: 20px;
   }
 
 
@@ -28,6 +23,7 @@ body{
     background-size: cover;
     color: white;
     filter: brightness(90%);
+    padding-top: 60px;
 }
 
 .container .home_btn {
@@ -49,6 +45,23 @@ body{
   text-decoration: none;
  }
 
+ .form-inputs {
+  padding-right: 30%;
+  padding-left: 30%;
+  color: white;
+}
+
+h2#sign-up {
+  padding-right: 30%;
+  padding-left: 30%;
+  color: white;
+}
+
+h2#login {
+  padding-right: 30%;
+  padding-left: 30%; 
+  color: white; 
+}
 
 .container h2 {
   font-size: 100px;
@@ -68,7 +81,6 @@ body{
    padding-left: 95%;
    color: white;
   }
-
 
   .login {
     color: rgb(255, 255, 255);
