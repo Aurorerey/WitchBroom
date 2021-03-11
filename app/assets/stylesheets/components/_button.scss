@@ -16,6 +16,10 @@
   }
   .btn {
     border-radius: 50px;
+    background-color: #7C9FD5 ;
+  }
+  a:hover {
+    color: #ffe3fe;
   }
 }
 
@@ -24,6 +28,6 @@
 }
 
 .btn-light.disabled, .btn-light:disabled {
-  background-color: #CFC0FF;
-  border-color: #ffe3fe;
+  background-color: #7C9FD5 ;
+  border-color: white ;
 }
