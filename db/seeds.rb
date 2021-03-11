@@ -23,7 +23,7 @@ users = User.all
 
 Broom.create!(name: "L'intrépide", description: "Il ne craint pas l'aventure, résiste à tout type d'intempéries
   , il ne vous decevra jamais.", price: 402,
-  power: 75, twigs: 657, age:"106", user: users.sample)
+  power: 75, twigs: 657, age:"106", image: url(https://res.cloudinary.com/cloudpandora/image/upload/v1615471915/WitchBroom/balaisfin_euiwsh.png), user: users.sample)
 
 Broom.create(name: "L'ancien", description: "Très très fiable, je ne le loue qu'à des sorcières de confiance,
   il est solide mais il faudra quand même en prendre grand soin.", price: 260,
