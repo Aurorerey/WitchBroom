@@ -20,9 +20,9 @@ class BroomsController < ApplicationController
     end
   end
 
-    private
+  private
 
   def broom_params
-    params.require(:broom).permit(:name, :description, :price, :twigs, :power, :age, :user_id)
+    params.require(:broom).permit(:name, :description, :price, :twigs, :power, :age, :user_id, :image)
   end
 end
