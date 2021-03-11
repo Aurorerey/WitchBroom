@@ -17,17 +17,13 @@ body{
     background-size: cover;
   }
 
-  .nav-link {
-    color: #ffe3fe;
-    font-size: 20px;
-  }
-
 
 .container {
     text-align: center;
     background-size: cover;
     color: white;
     filter: brightness(90%);
+    padding-top: 60px;
 }
 
 .container .home_btn {
@@ -68,7 +64,6 @@ body{
    padding-left: 95%;
    color: white;
   }
-
 
   .login {
     color: rgb(255, 255, 255);

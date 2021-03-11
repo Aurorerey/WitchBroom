@@ -16,15 +16,16 @@
   position: relative;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px 50px 20px 10px;
   background-color: transparent;
   & h1 {
     color: white;
+    padding-right: 65%;
   }
 }
 
 .nav-link {
-  text-decoration: none;
+  color: #ffe3fe;
+  font-size: 20px;
 }
