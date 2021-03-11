@@ -1,21 +1,43 @@
+
 <div class="container">
-    <h1><%= @broom.name %></h1>
-    <div class="block">
-    <div class="block_image">
-      <%= image_tag "Brooms images/balaisasia.png", alt: "alttext" %>
+  <div class="row">
+    <div class="col-6">
+      <div class= 'text-left'>
+        <h1><%= @broom.name %></h1>
+      </div>
+      <div class="block">
+        <div class="block_image">
+        <%= image_tag "Brooms images/balaisasia.png", alt: "alttext" %>
+        </div>
       </div>
     </div>
-      <div class="block_info" style="color:grey;">
-      <h2> Description </h2>
-    <p><%= @broom.description %>
-      <p><%= @broom.price %>$ /day</p>
-     <p><%= @broom.twigs %> brindilles</p>
-     <p><%= @broom.power %> cv</p>
-      <p><%= @broom.age %> ans</p>
-    </p>
+
+    <div class="col-6">
+      <div class="text-left">
+        <h3>Whole Broom</h3>
+        <h3>Covid Free</h3>
+        <h3>Maximum Comfort</h3>
+        <h3>No Refund </h3>
+      </div>
+    </div>
   </div>
-</div>
-<br>
-<div class="container">
+
+  <div class="row">
+    <div class="col-6">
+      <div class="block_info" style="color:white;">
+        <div class='text-left'>
+          <h3> Description </h3>
+          <p><%= @broom.description %>
+          <p><%= @broom.price %>$ /day</p>
+          <p><%= @broom.twigs %> brindilles</p>
+          <p><%= @broom.power %> cv</p>
+          <p><%= @broom.age %> ans</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">.col-6</div>
+  </div>
+  <div class="container">
   <%= link_to 'Back', brooms_path %>
+  </div>
 </div>
