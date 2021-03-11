@@ -22,10 +22,16 @@ User.create(nickname:"Ludovine", email: "ludovine@witch.com", password:"ludovine
 
 users = User.all
 
+<<<<<<< HEAD
 file = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615471915/WitchBroom/balaisfin_euiwsh.png')
 lintrepide = Broom.create!(name: "L'intrépide", description: "Il ne craint pas l'aventure, résiste à tout type d'intempéries
   , il ne vous decevra jamais.", price: 402, power: 75, twigs: 657, age:"106", user: users.sample)
 lintrepide.photo.attach(io: file, filename: 'balaisfin', content_type: 'image/jpg')
+=======
+Broom.create!(name: "L'intrépide", description: "Il ne craint pas l'aventure, résiste à tout type d'intempéries
+  , il ne vous decevra jamais.", price: 402,
+  power: 75, twigs: 657, age:"106", user: users.sample)
+>>>>>>> master
 
 Broom.create(name: "L'ancien", description: "Très très fiable, je ne le loue qu'à des sorcières de confiance,
   il est solide mais il faudra quand même en prendre grand soin.", price: 260,
