@@ -1,8 +1,6 @@
-<head>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
-</head>
 <body class="background">
-<div class="container">
+<div class="container1">
+  <div id="map" style="height: 300px; width: 600px"></div>
     <% @brooms.each do |broom| %>
     <div class="block">
       <div class="block_image">
@@ -26,5 +24,4 @@
   </div>
     <% end %>
 </div>
-<div id="map" style="height: 300px; width: 600px"></div>
 </body>
