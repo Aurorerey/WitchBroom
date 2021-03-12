@@ -5,7 +5,7 @@
       <% @brooms.each do |broom| %>
       <div class="block">
         <div class="block_image">
-          <%= image_tag "Brooms images/balaisasia.png", alt: "alttext" %>
+          <%= cl_image_tag broom.photo.key %>
         </div>
         <div class="block_info" style="color:grey;">
           <div class="sep_block">
@@ -23,14 +23,14 @@
           <br>
           <div class="sep_block">
             <p style="color:rgb(50, 50, 50); font-family: Luminari, fantasy;">
-              <%= image_tag "https://kitt.lewagon.com/placeholder/users/sarahlafer", class: "avatar-bordered", alt: "avatar-bordered" %>
+              <%= image_tag "https://kitt.lewagon.com/placeholder/users/aurorerey", class: "avatar-bordered", alt: "avatar-bordered" %>
               <strong>
                 Witch
                 <%= broom.user.nickname %>
               </p>
             </strong>
             <p style="color:black; font-family: roboto;">
-              <button type="button" class="btn btn-light btn_price" disabled>
+              <button type="button" class="btn btn-light btn_price">
                 <%= broom.price %>
                 $ /day
               </button>

@@ -11,7 +11,7 @@ class ReservationsController < ApplicationController
     @reservation.broom = @broom
     @reservation.user = current_user
     if @reservation.save
-      redirect_to broom_path(@broom, notice: "Your broom is flying home")
+      redirect_to broom_path(@broom), notice: "Your broom is flying home"
     else
       render :new
     end
