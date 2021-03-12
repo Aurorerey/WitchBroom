@@ -59,10 +59,6 @@ il peut vous emmener dans des endroits sans que vous lui demandiez, uniquement p
 letrange.photo.attach(io: file5, filename: 'balaisnoir', content_type: 'image/png')
 
 
-linvisible = Broom.create(name: "L'invisible'", description: "Passe inaperçu", price: 300,
- power: 45, twigs: 657, age:"34", user: users.sample)
-
-
 file7 = URI.open('https://res.cloudinary.com/cloudpandora/image/upload/v1615471915/WitchBroom/Leclassique_oootpf.png')
 leclassique = Broom.create(name: "Le classique", description: "Un beau balais comme on en fait plus, peut convenir aux débutantes de la voltige.", price: 300,
   power: 45, twigs: 657, age:"34", user: users.sample)
