@@ -1,27 +1,44 @@
 <body class="background">
-<div class="container1">
-  <div id="map" style="height: 300px; width: 600px"></div>
-    <% @brooms.each do |broom| %>
-    <div class="block">
-      <div class="block_image">
-      <%= image_tag "Brooms images/balaisasia.png", alt: "alttext" %>
+  <div class="box">
+    <div id="map"></div>
+    <div class="container1">
+      <% @brooms.each do |broom| %>
+      <div class="block">
+        <div class="block_image">
+          <%= image_tag "Brooms images/balaisasia.png", alt: "alttext" %>
+        </div>
+        <div class="block_info" style="color:grey;">
+          <div class="sep_block">
+            <h3 style="color:black; font-family: Luminari, fantasy;"><%= broom.name %></h3>
+            <div class="button_show">
+              <td>
+                <button type="button" class="btn btn-light btn_price"><%= link_to 'Info', broom_path(broom) %></td>
+              </button>
+            </div>
+          </div>
+          <br>
+          <p>
+            <i><%= broom.description %></p>
+          </i>
+          <br>
+          <div class="sep_block">
+            <p style="color:rgb(50, 50, 50); font-family: Luminari, fantasy;">
+              <%= image_tag "https://kitt.lewagon.com/placeholder/users/sarahlafer", class: "avatar-bordered", alt: "avatar-bordered" %>
+              <strong>
+                Witch
+                <%= broom.user.nickname %>
+              </p>
+            </strong>
+            <p style="color:black; font-family: roboto;">
+              <button type="button" class="btn btn-light btn_price" disabled>
+                <%= broom.price %>
+                $ /day
+              </button>
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="block_info" style="color:grey;">
-        <div class="sep_block">
-        <h3 style="color:black; font-family: Luminari, fantasy;"><%= broom.name %></h3>
-        <div class="button_show">
-         <td><button type="button" class="btn btn-light btn_price"><%= link_to 'Info', broom_path(broom) %></td></button>
-        </div>
-        </div>
-        <br>
-        <p><i><%= broom.description %></p></i>
-        <br>
-        <div class="sep_block">
-          <p style="color:rgb(50, 50, 50); font-family: Luminari, fantasy;"><%= image_tag "https://kitt.lewagon.com/placeholder/users/sarahlafer", class: "avatar-bordered", alt: "avatar-bordered" %>       <strong>Witch <%= broom.user.nickname %></p></strong>
-          <p style="color:black; font-family: roboto;"><button type="button" class="btn btn-light btn_price" disabled><%= broom.price %>$ /day</button></p>
-        </div>
+      <% end %>
     </div>
   </div>
-    <% end %>
-</div>
 </body>
