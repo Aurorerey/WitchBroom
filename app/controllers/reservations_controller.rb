@@ -1,5 +1,7 @@
 class ReservationsController < ApplicationController
+
   def new
+
     @broom = Broom.find(params[:broom_id])
     @reservation = Reservation.new
   end
