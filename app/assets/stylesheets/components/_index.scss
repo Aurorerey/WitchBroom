@@ -6,7 +6,6 @@
 
 .block {
     display: flex;
-    width: 45%;
     border: 2px solid black;
     background: white;
     opacity: 85%;
@@ -40,4 +39,9 @@
   padding-left: 15px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row-reverse;
 }
