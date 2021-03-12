@@ -4,7 +4,7 @@
     <% @brooms.each do |broom| %>
     <div class="block">
       <div class="block_image">
-      <%= cl_image_tag "@broom.photos.key"%>
+     <%= cl_image_tag broom.photo.key %>
       </div>
       <div class="block_info" style="color:grey;">
         <div class="sep_block">

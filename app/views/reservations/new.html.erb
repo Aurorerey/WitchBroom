@@ -1,7 +1,7 @@
 <h1>Nouvelle Réservation</h1>
 
 
-<%= simple_form_for(@reservation) do |f| %>
+<%= simple_form_for([@broom, @reservation]) do |f| %>
   <%= f.input :date %>
   <%= f.submit %>
 <% end %>

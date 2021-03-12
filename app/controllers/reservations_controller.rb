@@ -9,8 +9,9 @@ class ReservationsController < ApplicationController
     # we need `restaurant_id` to associate review with corresponding restaurant
     @broom = Broom.find(params[:broom_id])
     @reservation.broom = @broom
+    @reservation.user = current_user
     if @reservation.save
-      redirect_to broom_path(@broom)
+      redirect_to broom_path(@broom, notice: "Your broom is flying home")
     else
       render :new
     end
@@ -25,6 +26,6 @@ class ReservationsController < ApplicationController
   private
 
   def reservation_params
-    params.require(:reservation).permit(:date, :user_id, :broom_id)
+    params.require(:reservation).permit(:date)
   end
 end

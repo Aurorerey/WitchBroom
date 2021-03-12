@@ -41,45 +41,48 @@ document.addEventListener('turbolinks:load', () => {
 //   const lat = coordinates.lat;
 
   const mapDiv = document.getElementById('map');
-  mapDiv.innerHTML = '';
+  if(mapDiv) {
+      mapDiv.innerHTML = '';
 
-//   mapboxgl.accessToken = 'pk.eyJ1IjoiZ29sZGVuZWFnbGVzMzMzIiwiYSI6ImNrbGtwcWNuMTI0ZmgydnByanQwYzJtYWMifQ.m5n7IkJitqxnmwfcfHTLAw';
-//   const map = new mapboxgl.Map({
-//     container: 'map',
-//     style: 'mapbox://styles/mapbox/streets-v9',
-//     center: [lng, lat],
-//     zoom: 12
-//   });
-//   new mapboxgl.Marker()
-//     .setLngLat([lng, lat])
-//     .addTo(map);
-// };
 
-// const formElement = document.getElementById('searchForm');
-// Window.addEventListener('DOMContentLoaded', (event) => {
-  // prevent form's default behavior
-  // event.preventDefault();
+  //   mapboxgl.accessToken = 'pk.eyJ1IjoiZ29sZGVuZWFnbGVzMzMzIiwiYSI6ImNrbGtwcWNuMTI0ZmgydnByanQwYzJtYWMifQ.m5n7IkJitqxnmwfcfHTLAw';
+  //   const map = new mapboxgl.Map({
+  //     container: 'map',
+  //     style: 'mapbox://styles/mapbox/streets-v9',
+  //     center: [lng, lat],
+  //     zoom: 12
+  //   });
+  //   new mapboxgl.Marker()
+  //     .setLngLat([lng, lat])
+  //     .addTo(map);
+  // };
 
-  // get input value
-  // const address = document.getElementById('address').value;
-  const mapboxKey = 'pk.eyJ1IjoiZ29sZGVuZWFnbGVzMzMzIiwiYSI6ImNrbGtwcWNuMTI0ZmgydnByanQwYzJtYWMifQ.m5n7IkJitqxnmwfcfHTLAw';
-  // trigger request to Google Maps API
-  fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/marseille.json?access_token=${mapboxKey}`)
-    .then(response => response.json())
-    .then((data) => {
-      // const coordinates = {
-      //   lng: data.features[0].geometry.coordinates[0],
-      //   lat: data.features[0].geometry.coordinates[1]
-      // };
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZ29sZGVuZWFnbGVzMzMzIiwiYSI6ImNrbGtwcWNuMTI0ZmgydnByanQwYzJtYWMifQ.m5n7IkJitqxnmwfcfHTLAw';
-    const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
-    center: [data.features[0].geometry.coordinates[0], data.features[0].geometry.coordinates[1]],
-    zoom: 12
+  // const formElement = document.getElementById('searchForm');
+  // Window.addEventListener('DOMContentLoaded', (event) => {
+    // prevent form's default behavior
+    // event.preventDefault();
+
+    // get input value
+    // const address = document.getElementById('address').value;
+    const mapboxKey = 'pk.eyJ1IjoiZ29sZGVuZWFnbGVzMzMzIiwiYSI6ImNrbGtwcWNuMTI0ZmgydnByanQwYzJtYWMifQ.m5n7IkJitqxnmwfcfHTLAw';
+    // trigger request to Google Maps API
+    fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/marseille.json?access_token=${mapboxKey}`)
+      .then(response => response.json())
+      .then((data) => {
+        // const coordinates = {
+        //   lng: data.features[0].geometry.coordinates[0],
+        //   lat: data.features[0].geometry.coordinates[1]
+        // };
+      mapboxgl.accessToken = 'pk.eyJ1IjoiZ29sZGVuZWFnbGVzMzMzIiwiYSI6ImNrbGtwcWNuMTI0ZmgydnByanQwYzJtYWMifQ.m5n7IkJitqxnmwfcfHTLAw';
+      const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v9',
+      center: [data.features[0].geometry.coordinates[0], data.features[0].geometry.coordinates[1]],
+      zoom: 12
+    });
+  //   new mapboxgl.Marker()
+  //     .setLngLat([lng, lat])
+  //     .addTo(map);
   });
-//   new mapboxgl.Marker()
-//     .setLngLat([lng, lat])
-//     .addTo(map);
-});
+}
 });
