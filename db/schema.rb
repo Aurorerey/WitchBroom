@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2021_03_11_163257) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "image"
     t.index ["user_id"], name: "index_brooms_on_user_id"
   end
 
