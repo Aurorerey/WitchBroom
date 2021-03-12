@@ -7,7 +7,7 @@
       </div>
       <div class="block">
         <div class="block_image">
-        <%= image_tag "Brooms images/balaisasia.png", alt: "alttext" %>
+        <%= cl_image_tag @broom.photo.key %>
         </div>
       </div>
     </div>
@@ -21,6 +21,8 @@
       </div>
     </div>
   </div>
+
+  <%= link_to 'Book', new_broom_reservation_path(@broom) %>
 
   <div class="row">
     <div class="col-6">
