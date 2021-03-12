@@ -1,28 +1,31 @@
 
-<div class="container">
+<div class="container-show">
+  <head></head>
+  <body class="background">
   <div class="row">
     <div class="col-6">
       <div class= 'text-left'>
         <h1><%= @broom.name %></h1>
       </div>
       <div class="block">
+
         <div class="block_image">
         <%= cl_image_tag @broom.photo.key %>
         </div>
       </div>
     </div>
 
-    <div class="col-6">
+
       <div class="text-left">
-        <h3>Whole Broom</h3>
-        <h3>Covid Free</h3>
-        <h3>Maximum Comfort</h3>
-        <h3>No Refund </h3>
+        <h3>-Balais entier</h3>
+        <h3>-Norme covid à jour</h3>
+        <h3>-Pas de remboursement</h3>
+  <%= link_to "Book this broom!", new_broom_reservation_path(@broom), class: "nav-link" %>
       </div>
     </div>
-  </div>
 
-  <%= link_to 'Book', new_broom_reservation_path(@broom) %>
+
+<%= link_to 'Back', brooms_path %>
 
   <div class="row">
     <div class="col-6">
@@ -37,10 +40,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6">.col-6</div>
   </div>
-  <div class="container">
-  <%= link_to 'Back', brooms_path %>
-  </div>
-</div>
+ </body>
+
 
