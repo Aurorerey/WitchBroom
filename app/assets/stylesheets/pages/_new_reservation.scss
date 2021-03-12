@@ -1,0 +1,17 @@
+h1.show {
+    color: white;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 50px;
+}
+
+#new_reservation {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 30px;
+    color: white;
+    & input {
+        color: black;
+      }
+}
+
